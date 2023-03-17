@@ -8,6 +8,7 @@ public class Main {
             statement.execute("CREATE TABLE contacts (name TEXT, phone INTEGER, email TEXT)");
             statement.close();
             connection.close();
+            System.out.println("Nice");
         } catch (SQLException e) {
             System.out.println("Algo fue mal!: " + e.getMessage());
         }
